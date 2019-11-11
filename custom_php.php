@@ -177,13 +177,19 @@ if ($_POST['submit']) {
     $nmessage .= $content."\r\n\r\n";
     $nmessage .= "--".$uid."--";
 
+	/* 
+	the  email and print attachment functions are in comment, please remove the comment operator to use it.
+	for email function, please put on the email address you wan to receive .
+	*/
+
 	// For sending an email to admin
-	mail("admin@marlinbd.com,edwardchong11039@gmail.com,vgupta.vaani@gmail.com", "Marlin CV", $nmessage,$header);
+	/*
+	mail("email address", "Marlin CV", $nmessage,$header);
  	if(mail){
             echo "<h1>Thank you! Your Marlin-CV has been sent successfully.</h1>";
 		    }
     echo "<a href=''>back</a>";
-	
+	*/
 	// For Downloading a RTF document
 	//header('Content-type: application/ms-word');
     //header('Content-Disposition: attachment;Filename=.rtf');
